@@ -70,7 +70,7 @@ async fn thread_handle(ctx: Context, msg: Message) -> Result<(), serenity::prelu
                 msg.channel_id.say(&ctx.http, &downed).await?;
             }
         }
-        std::thread::sleep(std::time::Duration::from_millis(10000));
+        std::thread::sleep(std::time::Duration::from_millis(60000));
     }
 }
 
